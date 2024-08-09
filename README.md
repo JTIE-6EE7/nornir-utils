@@ -60,3 +60,9 @@ n9k-core-2:
 ```bash
 python verify-routes.py
 ```
+
+### 7. Deactivate Virtual Environment when finished
+
+```bash
+deactivate
+```
