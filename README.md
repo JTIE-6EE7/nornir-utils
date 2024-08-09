@@ -18,6 +18,8 @@ git clone https://github.com/JTIE-6EE7/nornir-utils.git
 
 cd nr-utils
 
+### 2. Create Virtual Environment and install Python modules
+
 python3 -m venv nornir
 
 source nornir/bin/activate
@@ -25,3 +27,11 @@ source nornir/bin/activate
 pip install --upgrade
 
 pip install -r requirements.txt
+
+### 3. Set credentials in your Environment Variables 
+
+Replace "USR" and "PWD" with your actual credentials
+
+```bash
+export nornir_usr=USR
+export nornir_pwd=PWD
