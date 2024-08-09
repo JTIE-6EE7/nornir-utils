@@ -14,7 +14,7 @@ Ensure you have the following installed on your system:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/JTIE-6EE7/nornir-utils.git
+git clone https://github.com/JTIE-6EE7/nr-utils.git
 
 cd nr-utils
 ```
