@@ -58,7 +58,7 @@ n9k-core-2:
 ### 6: Run script
 
 ```bash
-python verify-routes.py
+python verify-routes.py --routes
 ```
 
 ### 7. Deactivate Virtual Environment when finished
