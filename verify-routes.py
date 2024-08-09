@@ -47,36 +47,32 @@ def collect_info(task):
     task.host['routes'] = routes
 
 
-
-
 # function to check routes and next hops
 def check_routes(task):
-
+    # print each hostname
     pretty(f"\n[bold deep_sky_blue1]HOST: {task.host}")
 
+    # recursive function to find dicts within lists within lists
     def find_routes(nested_routes_list):
-
-
+        # init list of routes found
         routes = []
-
+        #interate over nested list
         for item in nested_routes_list:
+            # if dict, add it to routes
             if isinstance(item, dict):
-                #print("IS DICT!")
                 routes.append(item)
+            # is list, do it again
             elif isinstance(item, list):
-                #print("IS LIST :(")
                 routes.extend(find_routes(item))
+        # return list of dicts (routes found)
         return routes
 
-
+    # run outer function and get a list of routes
     routes = find_routes(task.host['routes'])
 
-
+    # parse routes and print output
     for route in routes:
         print(f"{route['network']: <13} via {route['nexthop_if']: <8} - {route['nexthop_ip']}")
-
-
-
 
 
 # Initializing and running the Norn
