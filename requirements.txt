@@ -1,4 +1,4 @@
-bcrypt==4.2.0
+bcrypt
 black==24.4.2
 certifi==2024.7.4
 cffi==1.17.0rc1
