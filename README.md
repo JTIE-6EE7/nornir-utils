@@ -24,7 +24,7 @@ python3 -m venv nornir
 
 source nornir/bin/activate
 
-pip install --upgrade
+pip install --upgrade pip
 
 pip install -r requirements.txt
 ```
