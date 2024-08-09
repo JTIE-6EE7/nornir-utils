@@ -5,7 +5,7 @@ cffi
 charset-normalizer
 click
 colorama
-cryptography
+cryptography<=42.0.0
 exceptiongroup
 future
 idna
