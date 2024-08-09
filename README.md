@@ -17,6 +17,7 @@ Ensure you have the following installed on your system:
 git clone https://github.com/JTIE-6EE7/nr-utils.git
 
 cd nr-utils
+
 ```
 ### 2. Create Virtual Environment and install Python modules
 ```bash
@@ -27,6 +28,7 @@ source nornir/bin/activate
 pip install --upgrade pip
 
 pip install -r requirements.txt
+
 ```
 
 ### 3. Set credentials in your Environment Variables 
@@ -59,10 +61,12 @@ n9k-core-2:
 
 ```bash
 python verify-routes.py --routes
+
 ```
 
 ### 7. Deactivate Virtual Environment when finished
 
 ```bash
 deactivate
+
 ```
