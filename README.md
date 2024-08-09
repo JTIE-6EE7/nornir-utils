@@ -37,3 +37,12 @@ Replace "USR" and "PWD" with your actual credentials
 export nornir_usr=USR
 export nornir_pwd=PWD
 ```
+### 4: Update inventory in hosts.yaml
+
+```yaml
+---
+n9k-core-1:
+  hostname: 10.95.0.1
+n9k-core-2:
+  hostname: 10.95.0.11
+```
