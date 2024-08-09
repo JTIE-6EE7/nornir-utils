@@ -46,3 +46,9 @@ n9k-core-1:
 n9k-core-2:
   hostname: 10.95.0.11
 ```
+### 5: Update platform in hosts.yaml (if needed)
+
+```yaml
+---
+  platform: nxos
+```
