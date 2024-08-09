@@ -37,6 +37,7 @@ Replace "USR" and "PWD" with your actual credentials
 export nornir_usr=USR
 export nornir_pwd=PWD
 ```
+
 ### 4: Update inventory in hosts.yaml
 
 ```yaml
@@ -46,9 +47,16 @@ n9k-core-1:
 n9k-core-2:
   hostname: 10.95.0.11
 ```
+
 ### 5: Update platform in hosts.yaml (if needed)
 
 ```yaml
 ---
   platform: nxos
+```
+
+### 6: Run script
+
+```bash
+python verify-routes.py
 ```
