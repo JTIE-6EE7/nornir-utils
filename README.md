@@ -1,6 +1,6 @@
-# nornir-utils
+# nr-utils
 
-## Steps to setup and run nornir utilities on a new installation
+Steps to setup and run Nornir utilities on a new linux installation
 
 ## Prerequisites
 
@@ -14,11 +14,14 @@ Ensure you have the following installed on your system:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/JTIE-6EE7/nornir-utils.git
 
-python3 -m venv venv
+cd nr-utils
 
-source venv/bin/activate
+python3 -m venv nornir
+
+source nornir/bin/activate
+
+pip install --upgrade
 
 pip install -r requirements.txt
