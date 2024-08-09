@@ -57,10 +57,7 @@ def check_routes(task):
 
 # Initializing and running the Norn
 def main():
-
-    print(os.getenv("nornir_usr"))
-    print(os.getenv("nornir_pwd"))
-          
+         
     # Init the Norn!
     nr = InitNornir()
 
